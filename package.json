@@ -19,6 +19,7 @@
     "match",
     "pattern"
   ],
+  "contributors": ["jden <jason@denizac.org>"],
   "author": "Agile Diagnosis <hello@agilediagnosis.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
