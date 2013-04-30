@@ -92,7 +92,7 @@ describe('match', function () {
         {path: ['animals','owl','size'], value: 2, parent: {size: 2}, key: 'size'},
         {path: ['animals','blue whale','size'], value: 80, parent: {size: 80}, key: 'size'},
         {path: ['animals','megalodon','size'], value: 100, parent: {size: 100}, key: 'size'}
-      ].reverse(/* order doesnt actually matter */))
+      ])
     })
 
     it('works on arrays', function () {
@@ -103,8 +103,9 @@ describe('match', function () {
       m.should.deep.equal([
         { path: [ 'a', '2', 'c' ], value: 3, parent: {c: 3}, key: 'c' },
         { path: [ 'a', '1', 'c' ], value: 2, parent: {c: 2}, key: 'c' },
-        { path: [ 'a', '0', 'c' ], value: 1, parent: {c: 1}, key: 'c' } ])
-      })
+        { path: [ 'a', '0', 'c' ], value: 1, parent: {c: 1}, key: 'c' }
+      ].reverse())
+    })
 
     it('works with multiple wildcards', function () {
       var m = match('a.*.c.*')({

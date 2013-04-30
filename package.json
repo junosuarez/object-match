@@ -19,12 +19,17 @@
     "match",
     "pattern"
   ],
-  "contributors": ["jden <jason@denizac.org>"],
+  "contributors": [
+    "jden <jason@denizac.org>"
+  ],
   "author": "Agile Diagnosis <hello@agilediagnosis.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
     "chai": "~1.6.0",
     "mocha": "~1.9.0"
+  },
+  "dependencies": {
+    "funderscore": "~0.2.0"
   }
 }
